@@ -1,0 +1,53 @@
+React dashboard using tailwind "responsive"
+
+1) use specific dependencies (in package.json):
+"dependencies": {
+    "@syncfusion/ej2": "^19.4.48",
+    "@syncfusion/ej2-react-calendars": "^19.4.48",
+    "@syncfusion/ej2-react-charts": "^19.4.50",
+    "@syncfusion/ej2-react-dropdowns": "^19.4.52",
+    "@syncfusion/ej2-react-grids": "^19.4.50",
+    "@syncfusion/ej2-react-inputs": "^19.4.52",
+    "@syncfusion/ej2-react-kanban": "^19.4.48",
+    "@syncfusion/ej2-react-popups": "^19.4.52",
+    "@syncfusion/ej2-react-richtexteditor": "^19.4.50",
+    "@syncfusion/ej2-react-schedule": "^19.4.50",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "5.0.0"
+  },
+
+2) the dependencies are from "syncfusion" ==> UI Component Suite for Building Powerful Web, Desktop, and Mobile Apps
+
+3) npm install --legacy --peer --deps ==> to make sure you installed the right dependensies
+
+4) @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+	==> in the index.css file to get some good fonts from it
+
+5) make an App.css file "Look at what is inside"
+
+6) initiate tailwind but we put more confg then usual "Look at the tailwind.config.js file"
+
+7) make a craco.config.js file "Look at what is inside"
+	==> Create React App Configuration Override
+	==> allows you to get all of the benefits of Create React App without ejecting. 
+	==> Customize your configurations ESLint, Babel, PostCSS, and many more with just a single configuration file at the root of your project.
+
+
+
+NOTE!!!!!!!!!!!!!!!!!!!: if you found an error when you start the project:
+	in the index.js file:
+		- Update the import statement from "import ReactDOM from '/react-dom/client';"
+		- To "import ReactDOM from 'react-dom';"
+
+NOTE!!!!!!!!!!!!!!!!!!!: the content will not be appear in the web, as the react-dom doesn't have the "createRoot" that we write in the index.js
+	==> soooooooooooo replace the render of root to:
+		ReactDOM.render(
+  			<React.StrictMode>
+    				<App />
+  			</React.StrictMode>,
+  			document.getElementById('root')
+		);
+
