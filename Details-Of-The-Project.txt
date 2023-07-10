@@ -51,3 +51,13 @@ NOTE!!!!!!!!!!!!!!!!!!!: the content will not be appear in the web, as the react
   			document.getElementById('root')
 		);
 
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Context API:
+	We put in it the initialstate of the cart, notification, chat, profile if they are opened or closed, Then used it in the navbar.
+	We also define the sidebar menu if it is open or not and made the functionality that can make us close and open it.
+	We also will check if the screen size is very small, so don't make the sidebar appears once i open the app or 
+	if i open it then i navigate so it should remain closed
+		by first tracking the page size then at specific size change the activeMenu "navBar" 
+		Then in the "sideBar"
+	"ContextProvider.js, index.js, App.js, Sidebar.js, NavBar.js"

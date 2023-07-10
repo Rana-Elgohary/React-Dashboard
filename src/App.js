@@ -25,8 +25,11 @@ import Pie from "./pages/Charts/Pie"
 import Pyramid from "./pages/Charts/Pyramid"
 import Stacked from "./pages/Charts/Stacked"
 
+import { useStateContext } from "./contexts/ContextProvider";
+
 function App() {
-  const activeMenu = true  
+  
+  const {activeMenu} = useStateContext()
 
   return (
     <div className="App">
